@@ -4,8 +4,12 @@ int main(){
     do{
         if(a % 2==0){
         printf("%d\n",a);
+          a+=7;
     }
-    a+=3;
+  
+    else{
+        a++;
+    }
     }while(a<=50);
     return 0;
 }
