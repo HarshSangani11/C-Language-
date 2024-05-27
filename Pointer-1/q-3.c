@@ -1,17 +1,15 @@
 #include <stdio.h>
 
-int main() {
-    int intValue = 10;
-    float floatValue = 3.14;
-    char charValue = 'A';
+main(){
+    int a = 2;
+    float b = 3.14;
+    char c = 'Y';
 
-    int *p1 = &intValue;
-    float *p2 = &floatValue;
-    char *p3 = &charValue;
+    int *p1 = &a;
+    float *p2 = &b;
+    char *p3 = &c;
 
-    printf("Value of integer using pointer: %d\n", *p1);
-    printf("Value of float using pointer: %f\n", *p2);
-    printf("Value of character using pointer: %c\n", *p3);
-
-    return 0;
+    printf("Value of integer :  %p %d\n",p1,*p1);
+    printf("Value of float :    %u %.2f\n",p2,*p2);
+    printf("Value of charcter : %x %c\n",p3,*p3);
 }
